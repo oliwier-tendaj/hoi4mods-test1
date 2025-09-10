@@ -1,0 +1,55 @@
+characters = {
+	LEC_great_leader = {
+		name = LEC_great_leader
+		portraits = {
+			civilian = {
+				large=GFX_portrait_LEC_character
+			}
+		}
+		country_leader = {
+			ideology=liberalism
+			traits = { conservative_grandee }
+			expire="1938.1.1.1"
+		}
+	}
+
+	LEC_field_marshal = {
+		name = LEC_field_marshal
+		portraits = {
+			army = {
+				small = GFX_idea_alan_brooke
+				large = GFX_portrait_ENG_alan_brooke
+			}
+		}
+		
+		field_marshal = {
+			traits = { career_officer trait_cautious defensive_doctrine }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+
+	LEC_general = {
+		name = LEC_general
+		portraits = {
+			
+		}
+	}
+
+	LEC_admiral = {
+		name = LEC_general
+		portraits = {
+			
+		}
+	}
+
+	LEC_advisor_character = {
+		name = LEC_general
+		portraits = {
+			
+		}
+	}
+}

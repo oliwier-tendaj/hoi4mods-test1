@@ -1,0 +1,1 @@
+LEC = "countries/lechpoznan.txt"
