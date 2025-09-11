@@ -14,10 +14,10 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
+	#support = {
+	#	engineer = { x = 0 y = 0 }
+	#	artillery = { x = 0 y = 1 }
+	#}
 }
 
 
@@ -25,7 +25,7 @@ division_template = {
 units = {
 	division = {
 		name = "Pierwsza dywizja kiboli lecha"
-		location = 86
+		location = 6558
 		division_template = "Infantry Division"
 		start_experience_factor = 1
 	}

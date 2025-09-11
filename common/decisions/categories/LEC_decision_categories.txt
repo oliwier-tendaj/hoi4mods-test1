@@ -1,0 +1,6 @@
+LEC_decision_cat = {
+	icon = generic_political_actions
+	allowed = {
+		tag = lec
+	}
+}

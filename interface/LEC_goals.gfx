@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_goal_LEC_logo"
+		texturefile = "gfx/interface/goals/focus_LEC_logo.tga"
+	}
+}

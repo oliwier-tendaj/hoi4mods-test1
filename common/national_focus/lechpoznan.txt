@@ -1,0 +1,62 @@
+focus_tree = {
+	id = lechpoznan_focus
+
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = lec
+		}
+	}
+
+	focus = {
+		id = LEC_focus_1
+		icon = GFX_goal_LEC_logo
+		x = 5
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = LEC_focus_2
+		icon = GFX_goal_generic_neutrality_focus
+		relative_position_id = LEC_focus_1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LEC_focus_1
+		}
+		mutually_exclusive = {
+			focus = LEC_focus_3
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+		focus = {
+		id = LEC_focus_3
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = LEC_focus_1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LEC_focus_1
+		}
+		mutually_exclusive = {
+			focus = LEC_focus_2
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+}

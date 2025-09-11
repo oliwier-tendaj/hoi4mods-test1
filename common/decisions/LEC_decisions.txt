@@ -1,0 +1,62 @@
+LEC_decision_cat = {
+	LEC_add_stability = {
+		icon = generic_industry
+		available = {
+			has_stability < 1
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.1
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+
+	LEC_build_up_war_support = {
+		icon = generic_industry
+		available = {
+			has_war_support < 1
+		}
+		visible = {
+			always = yes
+		}
+
+		cost = 50
+		days_remove = 22
+		days_re_enable = 365
+
+		modifier = {
+			war_support_weekly = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.6
+				has_political_power > 155
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+}
